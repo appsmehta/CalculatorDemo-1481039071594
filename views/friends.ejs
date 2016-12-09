@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends</title>
+    <%for(var i=0;i<body.length;i++)
+    {%>
+    <h4><%= body[i].user.displayName %></h4>
+    <img src=<%=body[i].user.avatar %> >
+    <p> Gender: <%= body[i].user.gender %></p>
+    <p> Average Daily Steps: <%= body[i].user.averageDailySteps %></p>
+    <p> Running Stride Length: <%= body[i].user.strideLengthRunning %></p>
+    <p> Weight : <%=body[i].user.weight %></p>
+    <div class="gap"></div>
+    <%}%>
+</head>
+<body>
+
+</body>
+</html>

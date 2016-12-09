@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body ng-app="TogetherApp" ng-controller="togetherController">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% if (body!="") {%>
+     <p><%= body.user.displayName %></p>
+    <img src=<%=body.user.avatar %> >
+    <p> Gender: <%= body.user.gender %></p>
+    <p> Average Daily Steps: <%= body.user.averageDailySteps %></p>
+    <p> Running Stride Length: <%= body.user.strideLengthRunning %></p>
+    <p> Weight : <%=body.user.weight %></p>
+    <%} %>
+
+  <a href="/friends"><button name="button" >Friends</button></a>
+  </body>
+</html>
